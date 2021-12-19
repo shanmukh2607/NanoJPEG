@@ -1,0 +1,45 @@
+
+CLOCKED TIMING ANALYSIS WITH COUNTER: IF- PATH OF ROWIDCT MODULE
+                 TIME
+                   0  RESET =1
+INPUTS:          TIME         x0          x1          x2          x3          x4          x5          x6          x7
+                   0          1           0           0           0           0           0           0           0
+OUTPUTS:        TIME,RESET,       y0          y1          y2          y3          y4          y5          y6          y7  rdy  ctr flag
+                   0 1,           0           0           0           0           0           0           0           0   0    0   x
+                  10 1,           0           0           0           0           0           0           0           0   0    0   1
+                  11 0,           0           0           0           0           0           0           0           0   0    0   1
+                  20 0,           8           8           8           8           8           8           8           8   0    1   1
+                  30 0,           8           8           8           8           8           8           8           8   1    1   1
+                  40 0,           8           8           8           8           8           8           8           8   1    1   1
+                  50 0,           8           8           8           8           8           8           8           8   1    1   1
+                  60 0,           8           8           8           8           8           8           8           8   1    1   1
+                  70 0,           8           8           8           8           8           8           8           8   1    1   1
+                  80 0,           8           8           8           8           8           8           8           8   1    1   1
+                  90 0,           8           8           8           8           8           8           8           8   1    1   1
+                 100 0,           8           8           8           8           8           8           8           8   1    1   1
+
+// Observation : INPUTS are fed at T=0. COMBINATIONAL OUTPUTS are ready by T=10.
+// However the RESET is not changed to 0 at T=10, causing the OUTPUT REGS to be at zero.
+// @T =11, RESET=0, CTR starts at 0. This allows writing into OUTPUT REGS at clk edge i.e, T =20.
+// @T =20, CTR is 1. We wait an extra clk cycle for unaccounted delays and write 1 into rdy.
+// @T =30, rdy is 1.
+
+// Note: Had the inputs be given at T=10, just before RESET =0, then OUTPUT REGS are actually ready at T=30.
+
+                 TIME
+                   0  RESET =1
+INITIAL OUTPUT: TIME,RESET,       y0          y1          y2          y3          y4          y5          y6          y7  rdy  ctr flag 
+                   0 1,           0           0           0           0           0           0           0           0   0    0   x
+INPUTS:          TIME         x0          x1          x2          x3          x4          x5          x6          x7
+                  10          1           0           0           0           0           0           0           0
+OUTPUTS:        TIME,RESET,       y0          y1          y2          y3          y4          y5          y6          y7  rdy  ctr flag
+                  11 0,           0           0           0           0           0           0           0           0   0    0   x
+                  20 0,           x           x           x           x           x           x           x           x   0    1   1
+                  30 0,           8           8           8           8           8           8           8           8   1    1   1
+                  40 0,           8           8           8           8           8           8           8           8   1    1   1
+                  50 0,           8           8           8           8           8           8           8           8   1    1   1
+                  60 0,           8           8           8           8           8           8           8           8   1    1   1
+                  70 0,           8           8           8           8           8           8           8           8   1    1   1
+                  80 0,           8           8           8           8           8           8           8           8   1    1   1
+                  90 0,           8           8           8           8           8           8           8           8   1    1   1
+                 100 0,           8           8           8           8           8           8           8           8   1    1   1

@@ -1,0 +1,3 @@
+Inputs given at T = 0.
+time =                    0, reset = 1, out0 =          x,  out1 =          x,  out2 =          x,  out3 =          x,  out4 =          x,  out5 =          x,  out6 =          x,  out7 =          x
+time =                   30, reset = 1, out0 =        128,  out1 =        128,  out2 =        128,  out3 =        128,  out4 =        128,  out5 =        128,  out6 =        128,  out7 =        128

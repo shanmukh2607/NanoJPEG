@@ -1,0 +1,48 @@
+// k8x8 before peripheral
+./testbench_verilator
+Built with Verilator 4.028 2020-02-06.
+Recommended: Verilator 4.0 or later.
+About to start decoding...
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+DQT Operation :2553 cycles.
+DQT Operation :2554 cycles.
+SOF Operation :4660 cycles.
+DHT Operation :1522012 cycles.
+DHT Operation :1821271 cycles.
+DHT Operation :1681388 cycles.
+DHT Operation :1801097 cycles.
+Decoding - macroblock sizes: 1 by 1
+0 0     Decode Scan Operation :269775 cycles.
+Success!
+Decoded the image in 7236416 cycles.
+Image Info computed in 33 cycles.
+Colour image of size 8 x 7
+Writing data to output.dump - 
+rename this to output.ppm or output.pgm to view
+
+All done...
+Cycle counter ........ 7302630
+Instruction counter .. 1474443
+CPI: 4.95
+DONE
+
+------------------------------------------------------------
+EBREAK instruction at 0x0000049C
+pc  0000049F    x8  00000000    x16 00000000    x24 00000000
+x1  0000046C    x9  00000000    x17 0001946D    x25 00000000
+x2  00020000    x10 20000000    x18 00000000    x26 00000000
+x3  DEADBEEF    x11 075BCD15    x19 00000000    x27 00000000
+x4  DEADBEEF    x12 0000004F    x20 00000000    x28 00011771
+x5  000025A6    x13 0000004E    x21 00000000    x29 FFFFDC4B
+x6  FFFFF2C3    x14 00000045    x22 00000000    x30 00000000
+x7  000008E4    x15 0000000A    x23 00000000    x31 00000000
+------------------------------------------------------------
+Number of fast external IRQs counted: 893
+Number of slow external IRQs counted: 111
+Number of timer IRQs counted: 0
+TRAP after 7349408 clock cycles
+ALL TESTS PASSED.
+- testbench_mod.v:198: Verilog $finish

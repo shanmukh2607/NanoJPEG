@@ -1,0 +1,1550 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9 (git sha1 1979e0b)
+
+
+-- Executing script file `synth.ys' --
+
+1. Executing Verilog-2005 frontend: rowidct.v
+Parsing Verilog input from `rowidct.v' to AST representation.
+Generating RTLIL representation for module `\rowidct'.
+Successfully finished Verilog frontend.
+
+2. Executing SYNTH_XILINX pass.
+
+2.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/cells_sim.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\BUFG'.
+Generating RTLIL representation for module `\BUFGCTRL'.
+Generating RTLIL representation for module `\BUFHCE'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT6_2'.
+Generating RTLIL representation for module `\MUXCY'.
+Generating RTLIL representation for module `\MUXF7'.
+Generating RTLIL representation for module `\MUXF8'.
+Generating RTLIL representation for module `\XORCY'.
+Generating RTLIL representation for module `\CARRY4'.
+Generating RTLIL representation for module `\FDRE'.
+Generating RTLIL representation for module `\FDSE'.
+Generating RTLIL representation for module `\FDCE'.
+Generating RTLIL representation for module `\FDPE'.
+Generating RTLIL representation for module `\FDRE_1'.
+Generating RTLIL representation for module `\FDSE_1'.
+Generating RTLIL representation for module `\FDCE_1'.
+Generating RTLIL representation for module `\FDPE_1'.
+Generating RTLIL representation for module `\RAM32X1D'.
+Generating RTLIL representation for module `\RAM64X1D'.
+Generating RTLIL representation for module `\RAM128X1D'.
+Generating RTLIL representation for module `\SRL16E'.
+Generating RTLIL representation for module `\SRLC32E'.
+Successfully finished Verilog frontend.
+
+2.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/cells_xtra.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/cells_xtra.v' to AST representation.
+Generating RTLIL representation for module `\BSCANE2'.
+Generating RTLIL representation for module `\BUFGCE'.
+Generating RTLIL representation for module `\BUFGCE_1'.
+Generating RTLIL representation for module `\BUFGMUX'.
+Generating RTLIL representation for module `\BUFGMUX_1'.
+Generating RTLIL representation for module `\BUFGMUX_CTRL'.
+Generating RTLIL representation for module `\BUFH'.
+Generating RTLIL representation for module `\BUFIO'.
+Generating RTLIL representation for module `\BUFMR'.
+Generating RTLIL representation for module `\BUFMRCE'.
+Generating RTLIL representation for module `\BUFR'.
+Generating RTLIL representation for module `\CAPTUREE2'.
+Generating RTLIL representation for module `\CFGLUT5'.
+Generating RTLIL representation for module `\DCIRESET'.
+Generating RTLIL representation for module `\DNA_PORT'.
+Generating RTLIL representation for module `\DSP48E1'.
+Generating RTLIL representation for module `\EFUSE_USR'.
+Generating RTLIL representation for module `\FIFO18E1'.
+Generating RTLIL representation for module `\FIFO36E1'.
+Generating RTLIL representation for module `\FRAME_ECCE2'.
+Generating RTLIL representation for module `\GTHE2_CHANNEL'.
+Generating RTLIL representation for module `\GTHE2_COMMON'.
+Generating RTLIL representation for module `\GTPE2_CHANNEL'.
+Generating RTLIL representation for module `\GTPE2_COMMON'.
+Generating RTLIL representation for module `\GTXE2_CHANNEL'.
+Generating RTLIL representation for module `\GTXE2_COMMON'.
+Generating RTLIL representation for module `\IBUF_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDS'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_GTE2'.
+Generating RTLIL representation for module `\IBUFDS_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_INTERMDISABLE'.
+Generating RTLIL representation for module `\ICAPE2'.
+Generating RTLIL representation for module `\IDDR'.
+Generating RTLIL representation for module `\IDDR_2CLK'.
+Generating RTLIL representation for module `\IDELAYCTRL'.
+Generating RTLIL representation for module `\IDELAYE2'.
+Generating RTLIL representation for module `\IN_FIFO'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\IOBUF_DCIEN'.
+Generating RTLIL representation for module `\IOBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFDS'.
+Generating RTLIL representation for module `\IOBUFDS_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\ISERDESE2'.
+Generating RTLIL representation for module `\KEEPER'.
+Generating RTLIL representation for module `\LDCE'.
+Generating RTLIL representation for module `\LDPE'.
+Generating RTLIL representation for module `\MMCME2_ADV'.
+Generating RTLIL representation for module `\MMCME2_BASE'.
+Generating RTLIL representation for module `\OBUFDS'.
+Generating RTLIL representation for module `\OBUFT'.
+Generating RTLIL representation for module `\OBUFTDS'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\ODELAYE2'.
+Generating RTLIL representation for module `\OSERDESE2'.
+Generating RTLIL representation for module `\OUT_FIFO'.
+Generating RTLIL representation for module `\PHASER_IN'.
+Generating RTLIL representation for module `\PHASER_IN_PHY'.
+Generating RTLIL representation for module `\PHASER_OUT'.
+Generating RTLIL representation for module `\PHASER_OUT_PHY'.
+Generating RTLIL representation for module `\PHASER_REF'.
+Generating RTLIL representation for module `\PHY_CONTROL'.
+Generating RTLIL representation for module `\PLLE2_ADV'.
+Generating RTLIL representation for module `\PLLE2_BASE'.
+Generating RTLIL representation for module `\PS7'.
+Generating RTLIL representation for module `\PULLDOWN'.
+Generating RTLIL representation for module `\PULLUP'.
+Generating RTLIL representation for module `\RAM128X1S'.
+Generating RTLIL representation for module `\RAM256X1S'.
+Generating RTLIL representation for module `\RAM32M'.
+Generating RTLIL representation for module `\RAM32X1S'.
+Generating RTLIL representation for module `\RAM32X1S_1'.
+Generating RTLIL representation for module `\RAM32X2S'.
+Generating RTLIL representation for module `\RAM64M'.
+Replacing existing blackbox module `\RAM64X1D' at /usr/bin/../share/yosys/xilinx/cells_xtra.v:3741.
+Generating RTLIL representation for module `\RAM64X1D'.
+Generating RTLIL representation for module `\RAM64X1S'.
+Generating RTLIL representation for module `\RAM64X1S_1'.
+Generating RTLIL representation for module `\RAM64X2S'.
+Generating RTLIL representation for module `\ROM128X1'.
+Generating RTLIL representation for module `\ROM256X1'.
+Generating RTLIL representation for module `\ROM32X1'.
+Generating RTLIL representation for module `\ROM64X1'.
+Generating RTLIL representation for module `\STARTUPE2'.
+Generating RTLIL representation for module `\USR_ACCESSE2'.
+Generating RTLIL representation for module `\XADC'.
+Successfully finished Verilog frontend.
+
+2.3. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/brams_bb.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/brams_bb.v' to AST representation.
+Generating RTLIL representation for module `\RAMB18E1'.
+Generating RTLIL representation for module `\RAMB36E1'.
+Successfully finished Verilog frontend.
+
+2.4. Executing HIERARCHY pass (managing design hierarchy).
+
+2.4.1. Analyzing design hierarchy..
+Top module:  \rowidct
+
+2.4.2. Analyzing design hierarchy..
+Top module:  \rowidct
+Removed 0 unused modules.
+
+2.5. Executing SYNTH pass.
+
+2.5.1. Executing PROC pass (convert processes to netlists).
+
+2.5.1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.5.1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$rowidct.v:118$175 in module rowidct.
+Marked 1 switch rules as full_case in process $proc$rowidct.v:100$150 in module rowidct.
+Removed a total of 0 dead cases.
+
+2.5.1.3. Executing PROC_INIT pass (extract init attributes).
+
+2.5.1.4. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `\rowidct.$proc$rowidct.v:118$175'.
+
+2.5.1.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\rowidct.$proc$rowidct.v:118$175'.
+     1/9: $0\y0[31:0]
+     2/9: $1\rdy[0:0]
+     3/9: $0\y7[31:0]
+     4/9: $0\y6[31:0]
+     5/9: $0\y5[31:0]
+     6/9: $0\y4[31:0]
+     7/9: $0\y3[31:0]
+     8/9: $0\y2[31:0]
+     9/9: $0\y1[31:0]
+Creating decoders for process `\rowidct.$proc$rowidct.v:100$150'.
+     1/12: $1\ardy[0:0]
+     2/12: { $1\Y0[31:0] $1\Y1[31:0] $1\Y2[31:0] $1\Y3[31:0] $1\Y4[31:0] $1\Y5[31:0] $1\Y6[31:0] $1\Y7[31:0] }
+     3/12: $0\ardy[0:0]
+     4/12: $0\Y7[31:0]
+     5/12: $0\Y6[31:0]
+     6/12: $0\Y5[31:0]
+     7/12: $0\Y4[31:0]
+     8/12: $0\Y3[31:0]
+     9/12: $0\Y2[31:0]
+    10/12: $0\Y1[31:0]
+    11/12: $0\Y0[31:0]
+    12/12: $0\rdy[0:0]
+
+2.5.1.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\rowidct.\rdy' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y0' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y1' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y2' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y3' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y4' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y5' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y6' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\Y7' from process `\rowidct.$proc$rowidct.v:100$150'.
+No latch inferred for signal `\rowidct.\ardy' from process `\rowidct.$proc$rowidct.v:100$150'.
+
+2.5.1.7. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\rowidct.\y0' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$209' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y1' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$210' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y2' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$211' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y3' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$212' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y4' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$213' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y5' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$214' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y6' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$215' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\y7' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $adff cell `$procdff$216' with positive edge clock and positive level reset.
+Creating register for signal `\rowidct.\rdy' using process `\rowidct.$proc$rowidct.v:118$175'.
+  created $dff cell `$procdff$217' with positive edge clock.
+
+2.5.1.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\rowidct.$proc$rowidct.v:118$175'.
+Removing empty process `rowidct.$proc$rowidct.v:118$175'.
+Found and cleaned up 1 empty switch in `\rowidct.$proc$rowidct.v:100$150'.
+Removing empty process `rowidct.$proc$rowidct.v:100$150'.
+Cleaned up 2 empty switches.
+
+2.5.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+<suppressed ~71 debug messages>
+
+2.5.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+Warning: Driver-driver conflict for \rdy between cell $procdff$217.Q and constant 1'0 in rowidct: Resolved using constant.
+Removed 2 unused cells and 145 unused wires.
+<suppressed ~3 debug messages>
+
+2.5.4. Executing CHECK pass (checking for obvious problems).
+checking module rowidct..
+found and reported 0 problems.
+
+2.5.5. Executing OPT pass (performing simple optimizations).
+
+2.5.5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rowidct..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~10 debug messages>
+
+2.5.5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rowidct.
+Performed a total of 0 changes.
+
+2.5.5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.5.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.5.5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.5.9. Finished OPT passes. (There is nothing left to do.)
+
+2.5.6. Executing WREDUCE pass (reducing word size of cells).
+Removed top 23 bits (of 32) from port B of cell rowidct.$add$rowidct.v:44$2 ($add).
+Removed top 3 bits (of 32) from port Y of cell rowidct.$add$rowidct.v:53$36 ($add).
+Removed top 3 bits (of 32) from port A of cell rowidct.$add$rowidct.v:53$36 ($add).
+Removed top 3 bits (of 32) from port B of cell rowidct.$add$rowidct.v:53$36 ($add).
+Removed top 2 bits (of 32) from port Y of cell rowidct.$add$rowidct.v:60$74 ($add).
+Removed top 2 bits (of 32) from port A of cell rowidct.$add$rowidct.v:60$74 ($add).
+Removed top 2 bits (of 32) from port B of cell rowidct.$add$rowidct.v:60$74 ($add).
+Removed top 23 bits (of 32) from port B of cell rowidct.$add$rowidct.v:88$130 ($add).
+Removed top 23 bits (of 32) from port B of cell rowidct.$add$rowidct.v:89$132 ($add).
+Removed top 8 bits (of 32) from port B of cell rowidct.$add$rowidct.v:92$136 ($add).
+Removed top 8 bits (of 32) from port B of cell rowidct.$add$rowidct.v:93$138 ($add).
+Removed top 8 bits (of 32) from port B of cell rowidct.$sub$rowidct.v:96$144 ($sub).
+Removed top 8 bits (of 32) from port B of cell rowidct.$sub$rowidct.v:97$146 ($sub).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$160 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$161 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$163 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$165 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$167 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$169 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$171 ($ne).
+Removed top 8 bits (of 32) from port B of cell rowidct.$ne$rowidct.v:114$173 ($ne).
+Removed top 3 bits (of 32) from wire rowidct.add1b.
+
+2.5.7. Executing PEEPOPT pass (run peephole optimizers).
+
+2.5.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.5.9. Executing TECHMAP pass (map to technology primitives).
+
+2.5.9.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/usr/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.5.9.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~20 debug messages>
+
+2.5.10. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module rowidct:
+  creating $macc model for $add$rowidct.v:44$2 ($add).
+  creating $macc model for $add$rowidct.v:46$3 ($add).
+  creating $macc model for $add$rowidct.v:47$10 ($add).
+  creating $macc model for $add$rowidct.v:47$11 ($add).
+  creating $macc model for $add$rowidct.v:47$6 ($add).
+  creating $macc model for $add$rowidct.v:47$8 ($add).
+  creating $macc model for $add$rowidct.v:48$14 ($add).
+  creating $macc model for $add$rowidct.v:48$16 ($add).
+  creating $macc model for $add$rowidct.v:48$18 ($add).
+  creating $macc model for $add$rowidct.v:48$20 ($add).
+  creating $macc model for $add$rowidct.v:49$23 ($add).
+  creating $macc model for $add$rowidct.v:49$25 ($add).
+  creating $macc model for $add$rowidct.v:49$27 ($add).
+  creating $macc model for $add$rowidct.v:49$29 ($add).
+  creating $macc model for $add$rowidct.v:49$31 ($add).
+  creating $macc model for $add$rowidct.v:49$33 ($add).
+  creating $macc model for $add$rowidct.v:50$34 ($add).
+  creating $macc model for $add$rowidct.v:53$36 ($add).
+  creating $macc model for $add$rowidct.v:54$39 ($add).
+  creating $macc model for $add$rowidct.v:54$41 ($add).
+  creating $macc model for $add$rowidct.v:54$43 ($add).
+  creating $macc model for $add$rowidct.v:54$45 ($add).
+  creating $macc model for $add$rowidct.v:55$48 ($add).
+  creating $macc model for $add$rowidct.v:55$50 ($add).
+  creating $macc model for $add$rowidct.v:55$52 ($add).
+  creating $macc model for $add$rowidct.v:55$54 ($add).
+  creating $macc model for $add$rowidct.v:55$56 ($add).
+  creating $macc model for $add$rowidct.v:55$57 ($add).
+  creating $macc model for $add$rowidct.v:56$60 ($add).
+  creating $macc model for $add$rowidct.v:56$62 ($add).
+  creating $macc model for $add$rowidct.v:56$64 ($add).
+  creating $macc model for $add$rowidct.v:56$66 ($add).
+  creating $macc model for $add$rowidct.v:56$68 ($add).
+  creating $macc model for $add$rowidct.v:56$70 ($add).
+  creating $macc model for $add$rowidct.v:56$71 ($add).
+  creating $macc model for $add$rowidct.v:60$74 ($add).
+  creating $macc model for $add$rowidct.v:61$77 ($add).
+  creating $macc model for $add$rowidct.v:61$79 ($add).
+  creating $macc model for $add$rowidct.v:61$81 ($add).
+  creating $macc model for $add$rowidct.v:62$84 ($add).
+  creating $macc model for $add$rowidct.v:62$86 ($add).
+  creating $macc model for $add$rowidct.v:62$88 ($add).
+  creating $macc model for $add$rowidct.v:62$90 ($add).
+  creating $macc model for $add$rowidct.v:62$92 ($add).
+  creating $macc model for $add$rowidct.v:63$95 ($add).
+  creating $macc model for $add$rowidct.v:63$97 ($add).
+  creating $macc model for $add$rowidct.v:65$99 ($add).
+  creating $macc model for $add$rowidct.v:67$101 ($add).
+  creating $macc model for $add$rowidct.v:70$104 ($add).
+  creating $macc model for $add$rowidct.v:73$106 ($add).
+  creating $macc model for $add$rowidct.v:76$108 ($add).
+  creating $macc model for $add$rowidct.v:79$110 ($add).
+  creating $macc model for $add$rowidct.v:82$112 ($add).
+  creating $macc model for $add$rowidct.v:85$116 ($add).
+  creating $macc model for $add$rowidct.v:85$118 ($add).
+  creating $macc model for $add$rowidct.v:85$120 ($add).
+  creating $macc model for $add$rowidct.v:85$121 ($add).
+  creating $macc model for $add$rowidct.v:86$124 ($add).
+  creating $macc model for $add$rowidct.v:86$126 ($add).
+  creating $macc model for $add$rowidct.v:86$128 ($add).
+  creating $macc model for $add$rowidct.v:86$129 ($add).
+  creating $macc model for $add$rowidct.v:88$130 ($add).
+  creating $macc model for $add$rowidct.v:89$132 ($add).
+  creating $macc model for $add$rowidct.v:91$134 ($add).
+  creating $macc model for $add$rowidct.v:92$136 ($add).
+  creating $macc model for $add$rowidct.v:93$138 ($add).
+  creating $macc model for $add$rowidct.v:94$140 ($add).
+  creating $macc model for $sub$rowidct.v:51$35 ($sub).
+  creating $macc model for $sub$rowidct.v:57$72 ($sub).
+  creating $macc model for $sub$rowidct.v:58$73 ($sub).
+  creating $macc model for $sub$rowidct.v:64$98 ($sub).
+  creating $macc model for $sub$rowidct.v:68$103 ($sub).
+  creating $macc model for $sub$rowidct.v:71$105 ($sub).
+  creating $macc model for $sub$rowidct.v:74$107 ($sub).
+  creating $macc model for $sub$rowidct.v:77$109 ($sub).
+  creating $macc model for $sub$rowidct.v:80$111 ($sub).
+  creating $macc model for $sub$rowidct.v:83$113 ($sub).
+  creating $macc model for $sub$rowidct.v:95$142 ($sub).
+  creating $macc model for $sub$rowidct.v:96$144 ($sub).
+  creating $macc model for $sub$rowidct.v:97$146 ($sub).
+  creating $macc model for $sub$rowidct.v:98$148 ($sub).
+  merging $macc model for $add$rowidct.v:62$92 into $sub$rowidct.v:64$98.
+  merging $macc model for $add$rowidct.v:62$90 into $sub$rowidct.v:64$98.
+  merging $macc model for $add$rowidct.v:62$88 into $sub$rowidct.v:64$98.
+  merging $macc model for $add$rowidct.v:62$86 into $sub$rowidct.v:64$98.
+  merging $macc model for $add$rowidct.v:62$84 into $sub$rowidct.v:64$98.
+  merging $macc model for $add$rowidct.v:56$71 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$70 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$68 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$66 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$64 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$62 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:56$60 into $sub$rowidct.v:58$73.
+  merging $macc model for $add$rowidct.v:55$57 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:55$56 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:55$54 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:55$52 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:55$50 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:55$48 into $sub$rowidct.v:57$72.
+  merging $macc model for $add$rowidct.v:49$33 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:49$31 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:49$29 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:49$27 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:49$25 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:49$23 into $sub$rowidct.v:51$35.
+  merging $macc model for $add$rowidct.v:86$129 into $add$rowidct.v:89$132.
+  merging $macc model for $add$rowidct.v:86$128 into $add$rowidct.v:89$132.
+  merging $macc model for $add$rowidct.v:86$126 into $add$rowidct.v:89$132.
+  merging $macc model for $add$rowidct.v:86$124 into $add$rowidct.v:89$132.
+  merging $macc model for $add$rowidct.v:85$121 into $add$rowidct.v:88$130.
+  merging $macc model for $add$rowidct.v:85$120 into $add$rowidct.v:88$130.
+  merging $macc model for $add$rowidct.v:85$118 into $add$rowidct.v:88$130.
+  merging $macc model for $add$rowidct.v:85$116 into $add$rowidct.v:88$130.
+  merging $macc model for $add$rowidct.v:63$97 into $add$rowidct.v:65$99.
+  merging $macc model for $add$rowidct.v:63$95 into $add$rowidct.v:65$99.
+  merging $macc model for $add$rowidct.v:61$79 into $add$rowidct.v:61$81.
+  merging $macc model for $add$rowidct.v:61$77 into $add$rowidct.v:61$81.
+  merging $macc model for $add$rowidct.v:54$43 into $add$rowidct.v:54$45.
+  merging $macc model for $add$rowidct.v:54$41 into $add$rowidct.v:54$45.
+  merging $macc model for $add$rowidct.v:54$39 into $add$rowidct.v:54$45.
+  merging $macc model for $add$rowidct.v:48$20 into $add$rowidct.v:50$34.
+  merging $macc model for $add$rowidct.v:48$18 into $add$rowidct.v:50$34.
+  merging $macc model for $add$rowidct.v:48$16 into $add$rowidct.v:50$34.
+  merging $macc model for $add$rowidct.v:48$14 into $add$rowidct.v:50$34.
+  merging $macc model for $add$rowidct.v:47$6 into $add$rowidct.v:47$8.
+  merging $macc model for $add$rowidct.v:47$10 into $add$rowidct.v:47$11.
+  merging $macc model for $add$rowidct.v:47$8 into $add$rowidct.v:47$11.
+  creating $alu model for $macc $add$rowidct.v:60$74.
+  creating $alu model for $macc $add$rowidct.v:67$101.
+  creating $alu model for $macc $add$rowidct.v:70$104.
+  creating $alu model for $macc $add$rowidct.v:73$106.
+  creating $alu model for $macc $add$rowidct.v:76$108.
+  creating $alu model for $macc $add$rowidct.v:79$110.
+  creating $alu model for $macc $add$rowidct.v:82$112.
+  creating $alu model for $macc $sub$rowidct.v:68$103.
+  creating $alu model for $macc $sub$rowidct.v:71$105.
+  creating $alu model for $macc $sub$rowidct.v:74$107.
+  creating $alu model for $macc $add$rowidct.v:53$36.
+  creating $alu model for $macc $add$rowidct.v:94$140.
+  creating $alu model for $macc $add$rowidct.v:93$138.
+  creating $alu model for $macc $add$rowidct.v:92$136.
+  creating $alu model for $macc $add$rowidct.v:91$134.
+  creating $alu model for $macc $sub$rowidct.v:77$109.
+  creating $alu model for $macc $sub$rowidct.v:80$111.
+  creating $alu model for $macc $sub$rowidct.v:83$113.
+  creating $alu model for $macc $sub$rowidct.v:95$142.
+  creating $alu model for $macc $sub$rowidct.v:98$148.
+  creating $alu model for $macc $sub$rowidct.v:96$144.
+  creating $alu model for $macc $sub$rowidct.v:97$146.
+  creating $alu model for $macc $add$rowidct.v:46$3.
+  creating $alu model for $macc $add$rowidct.v:44$2.
+  creating $macc cell for $add$rowidct.v:88$130: $auto$alumacc.cc:354:replace_macc$219
+  creating $macc cell for $add$rowidct.v:54$45: $auto$alumacc.cc:354:replace_macc$220
+  creating $macc cell for $add$rowidct.v:50$34: $auto$alumacc.cc:354:replace_macc$221
+  creating $macc cell for $add$rowidct.v:65$99: $auto$alumacc.cc:354:replace_macc$222
+  creating $macc cell for $sub$rowidct.v:51$35: $auto$alumacc.cc:354:replace_macc$223
+  creating $macc cell for $sub$rowidct.v:57$72: $auto$alumacc.cc:354:replace_macc$224
+  creating $macc cell for $add$rowidct.v:89$132: $auto$alumacc.cc:354:replace_macc$225
+  creating $macc cell for $add$rowidct.v:47$11: $auto$alumacc.cc:354:replace_macc$226
+  creating $macc cell for $sub$rowidct.v:64$98: $auto$alumacc.cc:354:replace_macc$227
+  creating $macc cell for $sub$rowidct.v:58$73: $auto$alumacc.cc:354:replace_macc$228
+  creating $macc cell for $add$rowidct.v:61$81: $auto$alumacc.cc:354:replace_macc$229
+  creating $alu cell for $add$rowidct.v:44$2: $auto$alumacc.cc:474:replace_alu$230
+  creating $alu cell for $add$rowidct.v:46$3: $auto$alumacc.cc:474:replace_alu$233
+  creating $alu cell for $sub$rowidct.v:97$146: $auto$alumacc.cc:474:replace_alu$236
+  creating $alu cell for $sub$rowidct.v:96$144: $auto$alumacc.cc:474:replace_alu$239
+  creating $alu cell for $sub$rowidct.v:98$148: $auto$alumacc.cc:474:replace_alu$242
+  creating $alu cell for $sub$rowidct.v:95$142: $auto$alumacc.cc:474:replace_alu$245
+  creating $alu cell for $sub$rowidct.v:83$113: $auto$alumacc.cc:474:replace_alu$248
+  creating $alu cell for $add$rowidct.v:91$134: $auto$alumacc.cc:474:replace_alu$251
+  creating $alu cell for $add$rowidct.v:92$136: $auto$alumacc.cc:474:replace_alu$254
+  creating $alu cell for $add$rowidct.v:93$138: $auto$alumacc.cc:474:replace_alu$257
+  creating $alu cell for $add$rowidct.v:94$140: $auto$alumacc.cc:474:replace_alu$260
+  creating $alu cell for $add$rowidct.v:53$36: $auto$alumacc.cc:474:replace_alu$263
+  creating $alu cell for $sub$rowidct.v:74$107: $auto$alumacc.cc:474:replace_alu$266
+  creating $alu cell for $sub$rowidct.v:71$105: $auto$alumacc.cc:474:replace_alu$269
+  creating $alu cell for $add$rowidct.v:82$112: $auto$alumacc.cc:474:replace_alu$272
+  creating $alu cell for $sub$rowidct.v:80$111: $auto$alumacc.cc:474:replace_alu$275
+  creating $alu cell for $add$rowidct.v:79$110: $auto$alumacc.cc:474:replace_alu$278
+  creating $alu cell for $sub$rowidct.v:77$109: $auto$alumacc.cc:474:replace_alu$281
+  creating $alu cell for $add$rowidct.v:76$108: $auto$alumacc.cc:474:replace_alu$284
+  creating $alu cell for $add$rowidct.v:73$106: $auto$alumacc.cc:474:replace_alu$287
+  creating $alu cell for $add$rowidct.v:70$104: $auto$alumacc.cc:474:replace_alu$290
+  creating $alu cell for $sub$rowidct.v:68$103: $auto$alumacc.cc:474:replace_alu$293
+  creating $alu cell for $add$rowidct.v:67$101: $auto$alumacc.cc:474:replace_alu$296
+  creating $alu cell for $add$rowidct.v:60$74: $auto$alumacc.cc:474:replace_alu$299
+  created 24 $alu and 11 $macc cells.
+
+2.5.11. Executing SHARE pass (SAT-based resource sharing).
+
+2.5.12. Executing OPT pass (performing simple optimizations).
+
+2.5.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rowidct..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~10 debug messages>
+
+2.5.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rowidct.
+Performed a total of 0 changes.
+
+2.5.12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.12.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.5.12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+Removed 46 unused cells and 46 unused wires.
+<suppressed ~55 debug messages>
+
+2.5.12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.5.12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rowidct..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~10 debug messages>
+
+2.5.12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rowidct.
+Performed a total of 0 changes.
+
+2.5.12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.12.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.5.12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.12.16. Finished OPT passes. (There is nothing left to do.)
+
+2.5.13. Executing FSM pass (extract and optimize FSM).
+
+2.5.13.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.5.13.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.5.13.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.5.13.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.13.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.5.13.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.5.13.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.5.13.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.5.14. Executing OPT pass (performing simple optimizations).
+
+2.5.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.5.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.5.14.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.5.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.14.5. Finished fast OPT passes.
+
+2.5.15. Executing MEMORY pass.
+
+2.5.15.1. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+2.5.15.2. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.15.3. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.5.15.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.5.15.5. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.5.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.6. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+2.7. Executing TECHMAP pass (map to technology primitives).
+
+2.7.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/brams_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__XILINX_RAMB36_SDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB18_SDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB36_TDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB18_TDP'.
+Successfully finished Verilog frontend.
+
+2.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+2.8. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+2.9. Executing TECHMAP pass (map to technology primitives).
+
+2.9.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/drams_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/drams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__XILINX_RAM32X1D'.
+Generating RTLIL representation for module `\$__XILINX_RAM64X1D'.
+Generating RTLIL representation for module `\$__XILINX_RAM128X1D'.
+Successfully finished Verilog frontend.
+
+2.9.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+2.10. Executing PMUX2SHIFTX pass.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+<suppressed ~7 debug messages>
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+2.11.5. Finished fast OPT passes.
+
+2.12. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+2.13. Executing DFFSR2DFF pass (mapping DFFSR cells to simpler FFs).
+
+2.14. Executing DFF2DFFE pass (transform $dff to $dffe where applicable).
+Transforming FF to FF+Enable cells in module rowidct:
+
+2.15. Executing OPT pass (performing simple optimizations).
+
+2.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rowidct..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~9 debug messages>
+
+2.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rowidct.
+Performed a total of 0 changes.
+
+2.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+Removed a total of 0 cells.
+
+2.15.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+
+2.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+
+2.15.9. Finished OPT passes. (There is nothing left to do.)
+
+2.16. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.17. Executing SHREGMAP pass (map shift registers).
+Converted 0 dff cells into 0 shift registers.
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+2.18.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/arith_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_xilinx_lcu'.
+Generating RTLIL representation for module `\_80_xilinx_alu'.
+Successfully finished Verilog frontend.
+
+2.18.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$2a61f516209e0fa4ee7297520d78e05c9ef2971a\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$facc0c75c9834e2bca780c7d2f3ae29a37005daf\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$c4ad4d678220a0f1453d4726ac4c5d96a5dca464\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$719b7377ef9ef9687a4f925f8696c903232706da\_80_xilinx_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc.
+  add \mul1a (32 bits, signed)
+  add { \x4 [20:0] 11'00000000000 } (32 bits, signed)
+  add { \x4 [29:0] 2'00 } (32 bits, signed)
+  add { \x4 [26:0] 5'00000 } (32 bits, signed)
+  add { \x4 [25:0] 6'000000 } (32 bits, signed)
+  add { \x4 [24:0] 7'0000000 } (32 bits, signed)
+Using template $paramod$90301c4f2f9919d0fc59ca1ffe5e93f658d3e7d1\_80_xilinx_alu for cells of type $alu.
+Using template $paramod$dc6ad280c69521aaf9506a837e5afa602bc04c62\_80_xilinx_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $ne.
+  add \mul1c (32 bits, signed)
+  add { \x3 [21:0] 10'0000000000 } (32 bits, signed)
+  add { \x3 [26:0] 5'00000 } (32 bits, signed)
+  add { \x3 [22:0] 9'000000000 } (32 bits, signed)
+Using template $paramod$c9383d18e95d0bbc35eb52c4382dcff3612873f7\_80_xilinx_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $mux.
+  add { \add1b [20:0] 11'00000000000 } (32 bits, signed)
+  add { \add1b 3'000 } (32 bits, signed)
+  add { \add1b [26:0] 5'00000 } (32 bits, signed)
+  add { \add1b [25:0] 6'000000 } (32 bits, signed)
+  add { \add1b [23:0] 8'00000000 } (32 bits, signed)
+  add \mul1a (32 bits, signed)
+  sub { \x5 [20:0] 11'00000000000 } (32 bits, signed)
+  sub { \x5 [30:0] 1'0 } (32 bits, signed)
+  sub { \x5 [29:0] 2'00 } (32 bits, signed)
+  sub { \x5 [28:0] 3'000 } (32 bits, signed)
+  sub { \x5 [25:0] 6'000000 } (32 bits, signed)
+  sub { \x5 [23:0] 8'00000000 } (32 bits, signed)
+  sub { \x5 [21:0] 10'0000000000 } (32 bits, signed)
+  packed 7 (3) bits / 1 words into adder tree
+  add { \b [24:0] 7'0000000 } (32 bits, signed)
+  add \b (32 bits, signed)
+  add { \b [29:0] 2'00 } (32 bits, signed)
+  add { \b [27:0] 4'0000 } (32 bits, signed)
+  add { \b [26:0] 5'00000 } (32 bits, signed)
+  add 128 (32 bits, unsigned)
+  add { \a [24:0] 7'0000000 } (32 bits, signed)
+  add \a (32 bits, signed)
+  add { \a [29:0] 2'00 } (32 bits, signed)
+  add { \a [27:0] 4'0000 } (32 bits, signed)
+  add { \a [26:0] 5'00000 } (32 bits, signed)
+  add 128 (32 bits, unsigned)
+  add { \add1a [22:0] 9'000000000 } (32 bits, signed)
+  add \add1a (32 bits, signed)
+  add { \add1a [29:0] 2'00 } (32 bits, signed)
+  add { \add1a [27:0] 4'0000 } (32 bits, signed)
+  add { \add1a [26:0] 5'00000 } (32 bits, signed)
+  add \mul1c (32 bits, signed)
+  sub { \x2 [20:0] 11'00000000000 } (32 bits, signed)
+  sub { \x2 [28:0] 3'000 } (32 bits, signed)
+  sub { \x2 [25:0] 6'000000 } (32 bits, signed)
+  sub { \x2 [24:0] 7'0000000 } (32 bits, signed)
+  sub { \x2 [22:0] 9'000000000 } (32 bits, signed)
+  sub { \x2 [21:0] 10'0000000000 } (32 bits, signed)
+  packed 6 (2) bits / 1 words into adder tree
+  add \mul1b (32 bits, signed)
+  sub { \x7 [20:0] 11'00000000000 } (32 bits, signed)
+  sub \x6 (32 bits, signed)
+  sub { \x6 [27:0] 4'0000 } (32 bits, signed)
+  sub { \x6 [26:0] 5'00000 } (32 bits, signed)
+  sub { \x6 [24:0] 7'0000000 } (32 bits, signed)
+  sub { \x6 [23:0] 8'00000000 } (32 bits, signed)
+  sub { \x6 [22:0] 9'000000000 } (32 bits, signed)
+  sub { \x6 [21:0] 10'0000000000 } (32 bits, signed)
+  packed 8 (1) bits / 1 words into adder tree
+Using extmapper simplemap for cells of type $adff.
+  add \mul1b (32 bits, signed)
+  sub { \x6 [22:0] 9'000000000 } (32 bits, signed)
+  sub \x6 (32 bits, signed)
+  sub { \x6 [30:0] 1'0 } (32 bits, signed)
+  sub { \x6 [29:0] 2'00 } (32 bits, signed)
+  sub { \x6 [28:0] 3'000 } (32 bits, signed)
+  sub { \x6 [27:0] 4'0000 } (32 bits, signed)
+  sub { \x6 [23:0] 8'00000000 } (32 bits, signed)
+  packed 7 (3) bits / 1 words into adder tree
+  add { \add1c [21:0] 10'0000000000 } (32 bits, signed)
+  add { \add1c [29:0] 2'00 } (32 bits, signed)
+  add { \add1c [27:0] 4'0000 } (32 bits, signed)
+  add { \add1c [25:0] 6'000000 } (32 bits, signed)
+Using template $paramod\_90_fa\WIDTH=30 for cells of type $fa.
+Using template $paramod$bf3b5fab9e093d19bbea16c6516a73d098dbaa75\_80_xilinx_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=29 for cells of type $fa.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod\_90_fa\WIDTH=27 for cells of type $fa.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=26 for cells of type $fa.
+Using template $paramod$b91837054f34aba236a6086ffe7be7f007625250\_80_xilinx_alu for cells of type $alu.
+No more expansions possible.
+<suppressed ~794 debug messages>
+
+2.19. Executing OPT pass (performing simple optimizations).
+
+2.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rowidct.
+<suppressed ~2747 debug messages>
+
+2.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rowidct'.
+<suppressed ~3270 debug messages>
+Removed a total of 1090 cells.
+
+2.19.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+2.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rowidct..
+Removed 870 unused cells and 1139 unused wires.
+<suppressed ~871 debug messages>
+
+2.19.5. Finished fast OPT passes.
+
+2.20. Executing TECHMAP pass (map to technology primitives).
+
+2.20.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+2.20.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/cells_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\_90_dff_nn0_to_np0'.
+Generating RTLIL representation for module `\_90_dff_pn0_to_pp0'.
+Generating RTLIL representation for module `\_90_dff_nn1_to_np1'.
+Generating RTLIL representation for module `\_90_dff_pn1_to_pp1'.
+Generating RTLIL representation for module `\$__SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_SHREG_'.
+Successfully finished Verilog frontend.
+
+2.20.3. Continuing TECHMAP pass.
+No more expansions possible.
+
+2.21. Executing ABC pass (technology mapping using ABC).
+
+2.21.1. Extracting gate netlist of module `\rowidct' to `<abc-temp-dir>/input.blif'..
+Extracted 9472 gates and 11007 wires to a netlist network with 1533 inputs and 2292 outputs.
+
+2.21.1.1. Executing ABC.
+Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + strash 
+ABC: + ifraig 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + if 
+ABC: + mfs2 
+ABC: Currently "mfs" cannot process the network containing nodes with more than 6 fanins.
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+2.21.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:     7310
+ABC RESULTS:        internal signals:     7182
+ABC RESULTS:           input signals:     1533
+ABC RESULTS:          output signals:     2292
+Removing temp directory.
+Removed 0 unused cells and 2178 unused wires.
+
+2.22. Executing SHREGMAP pass (map shift registers).
+Converted 0 dff cells into 0 shift registers.
+
+2.23. Executing TECHMAP pass (map to technology primitives).
+
+2.23.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/lut_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/lut_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+2.23.2. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/ff_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/ff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Successfully finished Verilog frontend.
+
+2.23.3. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/xilinx/cells_map.v
+Parsing Verilog input from `/usr/bin/../share/yosys/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\_90_dff_nn0_to_np0'.
+Generating RTLIL representation for module `\_90_dff_pn0_to_pp0'.
+Generating RTLIL representation for module `\_90_dff_nn1_to_np1'.
+Generating RTLIL representation for module `\_90_dff_pn1_to_pp1'.
+Generating RTLIL representation for module `\$__SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_SHREG_'.
+Successfully finished Verilog frontend.
+
+2.23.4. Continuing TECHMAP pass.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1001 for cells of type $lut.
+Using template $paramod$ccce4f3946ebc1c1bbc18bd1adc9add9d368a18e\$lut for cells of type $lut.
+Using template $paramod$fd981d57d953ba8dcac298d3386c951aac959b56\$lut for cells of type $lut.
+Using template $paramod$746424d0983081829316163db34337ccf8ceb1ee\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0001 for cells of type $lut.
+Using template $paramod$53afc4693cdd4770ebaebeb0ab6c288fde062f75\$lut for cells of type $lut.
+Using template $paramod$5fba6fa4affd3d8cb90b92595f737467c857f3c8\$lut for cells of type $lut.
+Using template $paramod$c5c622b499f3d6a6eadbcee07590320c957f9fad\$lut for cells of type $lut.
+Using template \$_DFF_PP0_ for cells of type $_DFF_PP0_.
+Using template $paramod\$lut\WIDTH=5\LUT=2147418112 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10010110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00010111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=268698688 for cells of type $lut.
+Using template $paramod$07b8bc46a9d399cd556361ac269abab39cb79da0\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01101001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=1711670784 for cells of type $lut.
+Using template $paramod$4526d80447623a44cc5440201b31f80a3ecf6064\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0001011111101000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=692311740 for cells of type $lut.
+Using template $paramod$7e5554b8ec1728303678e7c0d365390dede97dc8\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=1110162900 for cells of type $lut.
+Using template $paramod$5042388a59904f2800ceb7be5fd82672fd9df7ec\$lut for cells of type $lut.
+Using template $paramod$acaedc6ad0dcc76ba37a7d721b4c8a3204a2d11e\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11010100001010110010101111010100 for cells of type $lut.
+Using template $paramod$4539c1e4faca4dd688a8de3c7b32d6eadc6d2591\$lut for cells of type $lut.
+Using template $paramod$1fa04026d4b80cf5c4025b3c138ec9ffe13937ed\$lut for cells of type $lut.
+Using template $paramod$080b96bcefa3a448115ea94aad50b23ed5902a4b\$lut for cells of type $lut.
+Using template $paramod$b0eec318c85a06a7ace6cb2177979f4ac89c99c7\$lut for cells of type $lut.
+Using template $paramod$f9e98fd562dd74a01a66132b03e301ed67914ea4\$lut for cells of type $lut.
+Using template $paramod$25b5f51062916bb0a54ff243480490e70a53e676\$lut for cells of type $lut.
+Using template $paramod$9c6431f482c88e6179d8b2ed36a556c72371578f\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=18175871 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1000011101111000 for cells of type $lut.
+Using template $paramod$3c202466811d112c18a98b3e48cb1ca46054ef2a\$lut for cells of type $lut.
+Using template $paramod$77095f747b6443e0321eb64e09796e2566676b08\$lut for cells of type $lut.
+Using template $paramod$653dbbc5496a5e65a22d302d40f55f55f96888aa\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=411559800 for cells of type $lut.
+Using template $paramod$1c1171fbab37a59ccd35bd01b9596dfd2e78d5c3\$lut for cells of type $lut.
+Using template $paramod$f5cfa2640a74908ee9d15cb03f2184c7ab9d682e\$lut for cells of type $lut.
+Using template $paramod$f7ff28fbea40975dd4a9b8e90f0aae9d5711e772\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10010000 for cells of type $lut.
+Using template $paramod$b8cc232f12f0d09bf393dc2fa402f650c63098dd\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'10011100011000111110011100011000 for cells of type $lut.
+Using template $paramod$8e5d7e6ad340e790d1f3a9c974a6857b488df771\$lut for cells of type $lut.
+Using template $paramod$0078626864b15e4ada0e2807a2e4c8fea2ba72f8\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=339804160 for cells of type $lut.
+Using template $paramod$d729dcefbcf4d2c6dfd318bd4554061faa79a82d\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0100101110110100 for cells of type $lut.
+Using template $paramod$08f67196f4ba8885bb8411a0812b7ea526396018\$lut for cells of type $lut.
+Using template $paramod$25fe1c0a94e48405a930fc33ce0f433c355bade9\$lut for cells of type $lut.
+Using template $paramod$095e695abae376aae8a7222dfafa9188811d347b\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=1270133835 for cells of type $lut.
+Using template $paramod$48074aea63b83814e2eef7ec29047834c2282d54\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11101000000101110001011111101000 for cells of type $lut.
+Using template $paramod$5bcc914c9b68f464498e5c15dd48fa84aa1ab48e\$lut for cells of type $lut.
+Using template $paramod$ad8166c0abe32f9fa19a4f6afd6a63d01d6fe665\$lut for cells of type $lut.
+Using template $paramod$3a06b5fcadbbfd1564567b0ee40fe54e122063a2\$lut for cells of type $lut.
+Using template $paramod$cd970ad1e82e75f1ac0e4f19b385622566e51d6a\$lut for cells of type $lut.
+Using template $paramod$f5c6a3f371e9dac49537bd38fe634c2079b7d847\$lut for cells of type $lut.
+Using template $paramod$d490e7a0a3599a850d8d45ad9cc4a7131af197ed\$lut for cells of type $lut.
+Using template $paramod$ec23833946fdd7eb62e4c9c091519c4f6d9fa24a\$lut for cells of type $lut.
+Using template $paramod$87de3e97d53dc4d6c377c08092d5bf3835149cda\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00101011 for cells of type $lut.
+Using template $paramod$427375b7b397e5a8790f2faba4519b9ee70ed196\$lut for cells of type $lut.
+Using template $paramod$f38aa353bb538a124b3542f9752a00cdd4de2e62\$lut for cells of type $lut.
+Using template $paramod$78ca38af3a1fa489ab7e4c2e2228f11fe731d51e\$lut for cells of type $lut.
+Using template $paramod$8cc18a69da6058796ed515d67d44fcbced3f5563\$lut for cells of type $lut.
+Using template $paramod$b15014270b3c410f9674ce44c3d26690206854f8\$lut for cells of type $lut.
+Using template $paramod$e39dcb296ebd30fff7828e854c6f46ea04b5da7f\$lut for cells of type $lut.
+Using template $paramod$3f113f924f79803fa391d4eaaaf97ff01c6e00d4\$lut for cells of type $lut.
+Using template $paramod$4a70179bc71d1cea662af295166ec0461ab3da65\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00011000 for cells of type $lut.
+Using template $paramod$64e2b6acb4f5cfabab599bd0e63ce33f0e679092\$lut for cells of type $lut.
+Using template $paramod$75b780655b19dc44306a0c85a7982e929fc46468\$lut for cells of type $lut.
+Using template $paramod$d2c804d9e97fff214132015f4bc6010888f45681\$lut for cells of type $lut.
+Using template $paramod$63fcc51695a8693c53a4d60832352173844e7851\$lut for cells of type $lut.
+Using template $paramod$59c6d0029be7aae07dd6162fb3230fd05a255f2d\$lut for cells of type $lut.
+Using template $paramod$7ec115311f197041eebea7c91d7444c354508a6d\$lut for cells of type $lut.
+Using template $paramod$717e2aa00fdeea9177682e0da9d91b17790eb577\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=1\LUT=2'01 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'10010110000000000000000000000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=200604924 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00011110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1110000100011110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=733140045 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01111000 for cells of type $lut.
+Using template $paramod$0985c97f31be2bfd09411ee82cb6cbb317cf0e7d\$lut for cells of type $lut.
+Using template $paramod$7f2927c782b71cfe5d3c30a361ea7f7c4c75a33e\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$e3d111a282d3f094464950c774735ff42952aef6\$lut for cells of type $lut.
+Using template $paramod$4e09f5a2e4757e8730bd9a3e9e13173ca5a22b12\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0111100010000111 for cells of type $lut.
+Using template $paramod$3915d0b33b314aef073f03c0d7681eaf8491d9f3\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111111010000000 for cells of type $lut.
+Using template $paramod$7a3eab2a71b9f9d4310e7afcc5da4f6a7a848471\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11011011001001000010010011011011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0001100011100111 for cells of type $lut.
+Using template $paramod$ace6dfaeaadfb092f5867ca4db6e135598e4e641\$lut for cells of type $lut.
+Using template $paramod$a65459cfaaa0b28563d0c790d3a643ca396b9336\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0010010011011011 for cells of type $lut.
+Using template $paramod$648d23882fb991814e166d31e08ecd8ab30a469b\$lut for cells of type $lut.
+Using template $paramod$8d027b6431593b182a02f4aebc99c7bd656d99fb\$lut for cells of type $lut.
+Using template $paramod$a497a465560e3cc664fe510bbe37cbad3229ab5d\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0100001010111101 for cells of type $lut.
+Using template $paramod$a8c5e02d8964cd06da23c17ed92fafe794de6615\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10110010 for cells of type $lut.
+Using template $paramod$15ecfa4a7c338beae7f6e1cd38da0ab316ad90f6\$lut for cells of type $lut.
+Using template $paramod$4e3545b5ee3f0c15f4857bb32c59952ef3f4f5f7\$lut for cells of type $lut.
+Using template $paramod$8d37e959509cf7cfb24dfa3f34d1cfca8ab9338d\$lut for cells of type $lut.
+Using template $paramod$abb3d141bcd70c54bc2e4f321e7a5c403092c993\$lut for cells of type $lut.
+Using template $paramod$a29c0ba52b4d6b5c065170c282962340bc32c912\$lut for cells of type $lut.
+Using template $paramod$93b751933c7214c650796d39b9f2663bcaef21e1\$lut for cells of type $lut.
+Using template $paramod$73961cb462f447381f4ccc803f55d8f1f86245b2\$lut for cells of type $lut.
+Using template $paramod$0bbe2a20a4f528a352f42fe9b65c0c5aa61a8b47\$lut for cells of type $lut.
+Using template $paramod$0536c49ef11612645890e1391913bb131dd0b558\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1001011001101001 for cells of type $lut.
+Using template $paramod$bd4ba835a27ca04de96926b35cbaa77551f69c04\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11100000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11101000100011101000111011101000 for cells of type $lut.
+Using template $paramod$53ee990c1c7fdadafc9b1c64794644655ea5a2bb\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01000010 for cells of type $lut.
+Using template $paramod$e2a9d6a6a9279388c96b87cb85d3957c2734fc34\$lut for cells of type $lut.
+Using template $paramod$cb8d384fe1199325ab45b504f90570e898178bf7\$lut for cells of type $lut.
+Using template $paramod$d01c7dd8eaab129b781ad62ba0d2e83d246678a4\$lut for cells of type $lut.
+Using template $paramod$1fb3ba3b80f4b017ba1675c315c9908e21ce9aa2\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=2093072656 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01001011 for cells of type $lut.
+Using template $paramod$feae5fd8d18863310cd87cecf444250d615484a1\$lut for cells of type $lut.
+Using template $paramod$a47420320a2836930c093a15b2620876b6caece2\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0100000100010100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01000001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10110000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00010100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11101000 for cells of type $lut.
+Using template $paramod$bb3ed824561ec1add9d133e0062570f0118fd3af\$lut for cells of type $lut.
+Using template $paramod$c026bda9175c3acaaa54ec8f5cdcba8a8a1fa361\$lut for cells of type $lut.
+Using template $paramod$a7050d9783074bb5cc5c1776efabe69fe26adc5c\$lut for cells of type $lut.
+Using template $paramod$13fbff941335a0f1888d717624229e261f79dbda\$lut for cells of type $lut.
+Using template $paramod$22f0cbf3941b1478b5760a20c8d560be04228cf9\$lut for cells of type $lut.
+Using template $paramod$1edebd26bc1d06f69c9b020c3c31a93ccdc6c78e\$lut for cells of type $lut.
+Using template $paramod$ff87c8d0a98ee3db846fb2c9340659f61250c1a6\$lut for cells of type $lut.
+Using template $paramod$43bfa084de88f2649dee41875dd61fe1a850196a\$lut for cells of type $lut.
+Using template $paramod$07d2a5cb77b49015a1f1effc6c38c422bb0d77b1\$lut for cells of type $lut.
+Using template $paramod$382f33a27fb12759dc278b5e036a1f34c86a4107\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11110000000011101000100010000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=811928665 for cells of type $lut.
+Using template $paramod$8ed011fd5da29ba27ffd6ba615dadb3d8b726aa7\$lut for cells of type $lut.
+Using template $paramod$0549d454fdc6fc54473550f49ec4cbb8c29e37a4\$lut for cells of type $lut.
+Using template $paramod$3fcf3c71e55fb2942a94ad5d8cf9f46d7ec61096\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1011010011010010 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1011010001001011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1110100010001110 for cells of type $lut.
+Using template $paramod$cdc06dd47566be68617993582828b08e8865ffce\$lut for cells of type $lut.
+Using template $paramod$2f6c7dc5cae260930570849081a7b1a9228282c7\$lut for cells of type $lut.
+Using template $paramod$50b84d4b4ea9167cd314cdb76590b91778306265\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0110100110010110 for cells of type $lut.
+Using template $paramod$ee6706c40a9767a0977ba54baf54693662e4852a\$lut for cells of type $lut.
+Using template $paramod$5f244e8c69125fae82748fb90e927d82f96905d1\$lut for cells of type $lut.
+Using template $paramod$02af5a29e8972b4db11870d0e8bbf3e071d22a8b\$lut for cells of type $lut.
+Using template $paramod$270edfaae8d25dfaf1beb88886d877ff260e57c5\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0010101100100010 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01100000 for cells of type $lut.
+Using template $paramod$be754420c825aaf5a7baf6f515d733326e194825\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1001000000000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=2097120 for cells of type $lut.
+Using template $paramod$838e1fd069c1ed175330ddf7ac9c9714182ba5d9\$lut for cells of type $lut.
+Using template $paramod$427ee34a340638e5557113106b09551608c42242\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=67832580 for cells of type $lut.
+Using template $paramod$5f5a5309c30f1fb1ac5e1ff5fdad84a458097a83\$lut for cells of type $lut.
+Using template $paramod$d7faabf8da666ddc1122ab0bd172a0b9e88a1ba7\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11111111000000000000000000011111 for cells of type $lut.
+Using template $paramod$e36054dabd7e12ac3ae6fa86585348d87e5a8e1a\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11010100010011010010101110110010 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0001111011100001 for cells of type $lut.
+Using template $paramod$3d7fc2fb625d7c05ae54a71c4aa328a36af47a26\$lut for cells of type $lut.
+Using template $paramod$230a0993d3ccc6975acb35f325832aedc969eceb\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'10110010010011010100110110110010 for cells of type $lut.
+Using template $paramod$1509d33cfda85af8cbde32c6ece6139cf2727518\$lut for cells of type $lut.
+Using template $paramod$2ac1513ae671c6c9b3b725cb5c01b69686cc5d17\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0000000011101000 for cells of type $lut.
+Using template $paramod$4d7dbfdc45a0a42e7f7b3f865fb20abb2c74508b\$lut for cells of type $lut.
+Using template $paramod$e901149033713a2b6340950f0a244df83ba76f7e\$lut for cells of type $lut.
+Using template $paramod$383236a2a88774fd9703ce4c60f59eb2af794222\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11110100000010110000001100000011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11100001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=401139944 for cells of type $lut.
+Using template $paramod$fa11667f86b511b4a6f75385369f56211280a567\$lut for cells of type $lut.
+Using template $paramod$4a58549b663f5793b864348eebce218abe7aaaef\$lut for cells of type $lut.
+Using template $paramod$81c16ee6d4cb2835eb75ead8afa02110568f030d\$lut for cells of type $lut.
+Using template $paramod$e1c3a13be2a953c8adadc792ba330629e2b624a8\$lut for cells of type $lut.
+Using template $paramod$f76f654359c8c212499e96bc449caa6b571ae680\$lut for cells of type $lut.
+Using template $paramod$2fa47df92ffdd25985da290121250cbbd5755b33\$lut for cells of type $lut.
+Using template $paramod$42929682658b563b017cb3b1a9ce11d24db060a7\$lut for cells of type $lut.
+Using template $paramod$2d041c6f03d85444b72f72c262311a1907d17b7e\$lut for cells of type $lut.
+Using template $paramod$01a06f2f4663343c7a558c6e609987a7fd30d420\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=401139735 for cells of type $lut.
+Using template $paramod$6e329a1f6b7255e35a1d24cae1054520d45b1e7d\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11111100111010001110100011000000 for cells of type $lut.
+Using template $paramod$3f1c8717897e6117530d608d6267340103445a25\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11111110111010101010100010000000 for cells of type $lut.
+Using template $paramod$d64c31a688e6ec8680cdc5bdbcd9bd7808b3c79d\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1011001000101011 for cells of type $lut.
+Using template $paramod$b7877c575306f160bcca2f3b5983567b6da40756\$lut for cells of type $lut.
+Using template $paramod$7ec8d0c1bd2e9b56dfe9c6c062084ccceadf3ee9\$lut for cells of type $lut.
+Using template $paramod$aedfe655f35fd66224c170a8e83c47dff763b29f\$lut for cells of type $lut.
+Using template $paramod$0f298b7cbc9870060d6cea81b65e05243d90314d\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=1090322624 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10110100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0100110111000000 for cells of type $lut.
+Using template $paramod$a22439c5adbb0fbe92de7123b1e898133da14fb2\$lut for cells of type $lut.
+Using template $paramod$69714d11b55bf2f4511d7eabbf00c6d946292dbb\$lut for cells of type $lut.
+Using template $paramod$6eba7b6ec60b18c4073a4237e8cf689bb3b727ab\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=1771476585 for cells of type $lut.
+Using template $paramod$d2f443dd21742687f426a5bab2e4e35fbe0fbfab\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=32'11000000000000100010101110000000 for cells of type $lut.
+Using template $paramod$8b5dd467e459401935ee11a33bc09d47b9643470\$lut for cells of type $lut.
+Using template $paramod$55c67aa12bf0a570ef7df4d2a6042123b67fe07c\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00001011 for cells of type $lut.
+Using template $paramod$17c788f36e46ab759f8553a72a5855c9ad0c94c2\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=5\LUT=339820820 for cells of type $lut.
+No more expansions possible.
+<suppressed ~6348 debug messages>
+
+2.24. Executing DFFINIT pass (set INIT param on FF cells).
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1628.INIT (port=Q, net=\y0 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1629.INIT (port=Q, net=\y0 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1630.INIT (port=Q, net=\y0 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1631.INIT (port=Q, net=\y0 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1632.INIT (port=Q, net=\y0 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1633.INIT (port=Q, net=\y0 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1634.INIT (port=Q, net=\y0 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1635.INIT (port=Q, net=\y0 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1637.INIT (port=Q, net=\y0 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1638.INIT (port=Q, net=\y0 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1639.INIT (port=Q, net=\y0 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1640.INIT (port=Q, net=\y0 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1641.INIT (port=Q, net=\y0 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1642.INIT (port=Q, net=\y0 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1643.INIT (port=Q, net=\y0 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1644.INIT (port=Q, net=\y0 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1645.INIT (port=Q, net=\y0 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1646.INIT (port=Q, net=\y0 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1647.INIT (port=Q, net=\y0 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1648.INIT (port=Q, net=\y0 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1649.INIT (port=Q, net=\y0 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1650.INIT (port=Q, net=\y0 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1651.INIT (port=Q, net=\y0 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1652.INIT (port=Q, net=\y0 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1653.INIT (port=Q, net=\y0 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1654.INIT (port=Q, net=\y0 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1655.INIT (port=Q, net=\y0 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1656.INIT (port=Q, net=\y0 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1657.INIT (port=Q, net=\y0 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1658.INIT (port=Q, net=\y0 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2154.INIT (port=Q, net=\y6 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2155.INIT (port=Q, net=\y7 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2156.INIT (port=Q, net=\y7 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2157.INIT (port=Q, net=\y7 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2158.INIT (port=Q, net=\y7 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2159.INIT (port=Q, net=\y7 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2160.INIT (port=Q, net=\y7 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2161.INIT (port=Q, net=\y7 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2131.INIT (port=Q, net=\y6 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2162.INIT (port=Q, net=\y7 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2164.INIT (port=Q, net=\y7 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2165.INIT (port=Q, net=\y7 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2166.INIT (port=Q, net=\y7 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2167.INIT (port=Q, net=\y7 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2168.INIT (port=Q, net=\y7 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2169.INIT (port=Q, net=\y7 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2170.INIT (port=Q, net=\y7 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2171.INIT (port=Q, net=\y7 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2172.INIT (port=Q, net=\y7 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2173.INIT (port=Q, net=\y7 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2174.INIT (port=Q, net=\y7 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2175.INIT (port=Q, net=\y7 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2176.INIT (port=Q, net=\y7 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2177.INIT (port=Q, net=\y7 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2178.INIT (port=Q, net=\y7 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2179.INIT (port=Q, net=\y7 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2180.INIT (port=Q, net=\y7 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2181.INIT (port=Q, net=\y7 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2182.INIT (port=Q, net=\y7 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2183.INIT (port=Q, net=\y7 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2184.INIT (port=Q, net=\y7 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2185.INIT (port=Q, net=\y7 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2058.INIT (port=Q, net=\y3 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2059.INIT (port=Q, net=\y4 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2060.INIT (port=Q, net=\y4 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2061.INIT (port=Q, net=\y4 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2062.INIT (port=Q, net=\y4 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2063.INIT (port=Q, net=\y4 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2064.INIT (port=Q, net=\y4 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2065.INIT (port=Q, net=\y4 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2035.INIT (port=Q, net=\y3 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2066.INIT (port=Q, net=\y4 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2068.INIT (port=Q, net=\y4 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2069.INIT (port=Q, net=\y4 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2070.INIT (port=Q, net=\y4 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2071.INIT (port=Q, net=\y4 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2072.INIT (port=Q, net=\y4 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2073.INIT (port=Q, net=\y4 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2074.INIT (port=Q, net=\y4 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2075.INIT (port=Q, net=\y4 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2076.INIT (port=Q, net=\y4 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2077.INIT (port=Q, net=\y4 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2078.INIT (port=Q, net=\y4 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2079.INIT (port=Q, net=\y4 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2080.INIT (port=Q, net=\y4 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2081.INIT (port=Q, net=\y4 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2082.INIT (port=Q, net=\y4 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2083.INIT (port=Q, net=\y4 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2084.INIT (port=Q, net=\y4 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2085.INIT (port=Q, net=\y4 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2086.INIT (port=Q, net=\y4 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2087.INIT (port=Q, net=\y4 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2088.INIT (port=Q, net=\y4 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2089.INIT (port=Q, net=\y4 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2122.INIT (port=Q, net=\y5 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2123.INIT (port=Q, net=\y6 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2124.INIT (port=Q, net=\y6 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2125.INIT (port=Q, net=\y6 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2126.INIT (port=Q, net=\y6 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2127.INIT (port=Q, net=\y6 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2128.INIT (port=Q, net=\y6 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2129.INIT (port=Q, net=\y6 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2099.INIT (port=Q, net=\y5 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2130.INIT (port=Q, net=\y6 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2132.INIT (port=Q, net=\y6 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2133.INIT (port=Q, net=\y6 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2134.INIT (port=Q, net=\y6 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2135.INIT (port=Q, net=\y6 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2136.INIT (port=Q, net=\y6 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2137.INIT (port=Q, net=\y6 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2138.INIT (port=Q, net=\y6 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2139.INIT (port=Q, net=\y6 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2140.INIT (port=Q, net=\y6 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2141.INIT (port=Q, net=\y6 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2142.INIT (port=Q, net=\y6 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2143.INIT (port=Q, net=\y6 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2144.INIT (port=Q, net=\y6 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2145.INIT (port=Q, net=\y6 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2146.INIT (port=Q, net=\y6 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2147.INIT (port=Q, net=\y6 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2148.INIT (port=Q, net=\y6 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2149.INIT (port=Q, net=\y6 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2150.INIT (port=Q, net=\y6 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2151.INIT (port=Q, net=\y6 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2152.INIT (port=Q, net=\y6 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2153.INIT (port=Q, net=\y6 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2090.INIT (port=Q, net=\y4 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2091.INIT (port=Q, net=\y5 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2092.INIT (port=Q, net=\y5 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2093.INIT (port=Q, net=\y5 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2094.INIT (port=Q, net=\y5 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2095.INIT (port=Q, net=\y5 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2096.INIT (port=Q, net=\y5 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2097.INIT (port=Q, net=\y5 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2067.INIT (port=Q, net=\y4 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2098.INIT (port=Q, net=\y5 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2100.INIT (port=Q, net=\y5 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2101.INIT (port=Q, net=\y5 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2102.INIT (port=Q, net=\y5 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2103.INIT (port=Q, net=\y5 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2104.INIT (port=Q, net=\y5 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2105.INIT (port=Q, net=\y5 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2106.INIT (port=Q, net=\y5 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2107.INIT (port=Q, net=\y5 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2108.INIT (port=Q, net=\y5 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2109.INIT (port=Q, net=\y5 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2110.INIT (port=Q, net=\y5 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2111.INIT (port=Q, net=\y5 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2112.INIT (port=Q, net=\y5 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2113.INIT (port=Q, net=\y5 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2114.INIT (port=Q, net=\y5 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2115.INIT (port=Q, net=\y5 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2116.INIT (port=Q, net=\y5 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2117.INIT (port=Q, net=\y5 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2118.INIT (port=Q, net=\y5 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2119.INIT (port=Q, net=\y5 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2120.INIT (port=Q, net=\y5 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2121.INIT (port=Q, net=\y5 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1964.INIT (port=Q, net=\y1 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1965.INIT (port=Q, net=\y1 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1966.INIT (port=Q, net=\y1 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1967.INIT (port=Q, net=\y1 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1968.INIT (port=Q, net=\y1 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1969.INIT (port=Q, net=\y1 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1970.INIT (port=Q, net=\y1 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1972.INIT (port=Q, net=\y1 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1973.INIT (port=Q, net=\y1 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1974.INIT (port=Q, net=\y1 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1975.INIT (port=Q, net=\y1 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1976.INIT (port=Q, net=\y1 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1977.INIT (port=Q, net=\y1 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1978.INIT (port=Q, net=\y1 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1979.INIT (port=Q, net=\y1 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1980.INIT (port=Q, net=\y1 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1981.INIT (port=Q, net=\y1 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1982.INIT (port=Q, net=\y1 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1983.INIT (port=Q, net=\y1 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1984.INIT (port=Q, net=\y1 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1985.INIT (port=Q, net=\y1 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1986.INIT (port=Q, net=\y1 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1987.INIT (port=Q, net=\y1 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1988.INIT (port=Q, net=\y1 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1989.INIT (port=Q, net=\y1 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1990.INIT (port=Q, net=\y1 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1991.INIT (port=Q, net=\y1 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1992.INIT (port=Q, net=\y1 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1993.INIT (port=Q, net=\y1 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2026.INIT (port=Q, net=\y2 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2027.INIT (port=Q, net=\y3 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2028.INIT (port=Q, net=\y3 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2029.INIT (port=Q, net=\y3 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2030.INIT (port=Q, net=\y3 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2031.INIT (port=Q, net=\y3 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2032.INIT (port=Q, net=\y3 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2033.INIT (port=Q, net=\y3 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2003.INIT (port=Q, net=\y2 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2034.INIT (port=Q, net=\y3 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2036.INIT (port=Q, net=\y3 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2037.INIT (port=Q, net=\y3 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2038.INIT (port=Q, net=\y3 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2039.INIT (port=Q, net=\y3 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2040.INIT (port=Q, net=\y3 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2041.INIT (port=Q, net=\y3 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2042.INIT (port=Q, net=\y3 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2043.INIT (port=Q, net=\y3 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2044.INIT (port=Q, net=\y3 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2045.INIT (port=Q, net=\y3 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2046.INIT (port=Q, net=\y3 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2047.INIT (port=Q, net=\y3 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2048.INIT (port=Q, net=\y3 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2049.INIT (port=Q, net=\y3 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2050.INIT (port=Q, net=\y3 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2051.INIT (port=Q, net=\y3 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2052.INIT (port=Q, net=\y3 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2053.INIT (port=Q, net=\y3 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2054.INIT (port=Q, net=\y3 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2055.INIT (port=Q, net=\y3 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2056.INIT (port=Q, net=\y3 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2057.INIT (port=Q, net=\y3 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1994.INIT (port=Q, net=\y1 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1995.INIT (port=Q, net=\y2 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1996.INIT (port=Q, net=\y2 [1]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1997.INIT (port=Q, net=\y2 [2]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1998.INIT (port=Q, net=\y2 [3]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1999.INIT (port=Q, net=\y2 [4]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2000.INIT (port=Q, net=\y2 [5]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2001.INIT (port=Q, net=\y2 [6]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2002.INIT (port=Q, net=\y2 [7]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2004.INIT (port=Q, net=\y2 [9]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2005.INIT (port=Q, net=\y2 [10]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2006.INIT (port=Q, net=\y2 [11]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2007.INIT (port=Q, net=\y2 [12]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2008.INIT (port=Q, net=\y2 [13]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2009.INIT (port=Q, net=\y2 [14]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2010.INIT (port=Q, net=\y2 [15]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2011.INIT (port=Q, net=\y2 [16]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2012.INIT (port=Q, net=\y2 [17]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2013.INIT (port=Q, net=\y2 [18]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2014.INIT (port=Q, net=\y2 [19]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2015.INIT (port=Q, net=\y2 [20]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2016.INIT (port=Q, net=\y2 [21]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2017.INIT (port=Q, net=\y2 [22]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2018.INIT (port=Q, net=\y2 [23]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2019.INIT (port=Q, net=\y2 [24]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2020.INIT (port=Q, net=\y2 [25]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2021.INIT (port=Q, net=\y2 [26]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2022.INIT (port=Q, net=\y2 [27]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2023.INIT (port=Q, net=\y2 [28]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2024.INIT (port=Q, net=\y2 [29]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2025.INIT (port=Q, net=\y2 [30]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2186.INIT (port=Q, net=\y7 [31]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1963.INIT (port=Q, net=\y1 [0]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$2163.INIT (port=Q, net=\y7 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1636.INIT (port=Q, net=\y0 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1971.INIT (port=Q, net=\y1 [8]) to 1'0.
+Setting rowidct.$auto$simplemap.cc:496:simplemap_adff$1659.INIT (port=Q, net=\y0 [31]) to 1'0.
+Removed 0 unused cells and 8324 unused wires.
+
+2.25. Executing HIERARCHY pass (managing design hierarchy).
+
+2.25.1. Analyzing design hierarchy..
+Top module:  \rowidct
+
+2.25.2. Analyzing design hierarchy..
+Top module:  \rowidct
+Removed 0 unused modules.
+
+2.26. Printing statistics.
+
+=== rowidct ===
+
+   Number of wires:               3829
+   Number of wire bits:           6735
+   Number of public wires:          54
+   Number of public wire bits:    1632
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               6359
+     FDCE                          256
+     LUT1                          334
+     LUT2                         1351
+     LUT3                          403
+     LUT4                           77
+     LUT5                          107
+     LUT6                         1547
+     MUXCY                        1080
+     MUXF7                         130
+     MUXF8                          39
+     XORCY                        1035
+
+   Estimated number of LCs:       2683
+
+2.27. Executing CHECK pass (checking for obvious problems).
+checking module rowidct..
+found and reported 0 problems.
+
+3. Executing Verilog backend.
+Dumping module `\rowidct'.
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: f5cbfbe9ae
+CPU: user 8.45s system 0.16s, MEM: 180.91 MB total, 175.16 MB resident
+Yosys 0.9 (git sha1 1979e0b)
+Time spent: 29% 2x write_verilog (2 sec), 12% 10x opt_merge (1 sec), ...

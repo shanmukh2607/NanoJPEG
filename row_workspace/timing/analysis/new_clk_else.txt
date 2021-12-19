@@ -1,0 +1,32 @@
+
+CLOCKED TIMING ANALYSIS WITH COUNTER: ELSE- PATH OF ROWIDCT MODULE
+                   0  RESET =1
+INITIAL OUTPUT: TIME,RESET,       y0          y1          y2          y3          y4          y5          y6          y7  rdy  ctr flag 
+                   0 1,           0           0           0           0           0           0           0           0   0    0   x
+INPUTS:          TIME         x0          x1          x2          x3          x4          x5          x6          x7
+
+                  10          1           2           3           4           3           2           1           0
+OUTPUTS:        TIME,RESET,       y0          y1          y2          y3          y4          y5          y6          y7  rdy  ctr flag
+                  10 1,           0           0           0           0           0           0           0           0   0    0   0
+                  11 0,           0           0           0           0           0           0           0           0   0    0   0
+                  20 0,           x           x           x           x           x           x           x           x   0    1   0
+                  30 0,           x           x           x           x           x           x           x           x   0    2   0
+                  40 0,           x           x           x           x           x           x           x           x   0    3   0
+                  50 0,           x           x           x           x           x           x           x           x   0    4   0
+                  60 0,           x           x           x           x           x           x           x           x   0    5   0
+                  70 0,           x           x           x           x           x           x           x           x   0    6   0
+                  80 0,           x           x           x           x           x           x           x           x   0    7   0
+                  90 0,           x           x           x           x           x           x           x           x   0    8   0
+                 100 0,         123           x           x         -37         -25           x           x          35   0    9   0
+                 110 0,         123           x           x         -37         -25           x           x          35   0   10   0
+                 120 0,         123           x           x         -37         -25           x           x          35   0   11   0
+                 130 0,         123           x           x         -37         -25           x           x          35   0   12   0
+                 140 0,         123           x           x         -37         -25           x           x          35   0   13   0
+                 150 0,         123           x           x         -37         -25           x           x          35   0   14   0
+                 160 0,         123           x           x         -37         -25           x           x          35   0   15   0
+                 170 0,         123         -17          46         -37         -25         -34         -27          35   1   15   0
+                 180 0,         123         -17          46         -37         -25         -34         -27          35   1   15   0
+                 190 0,         123         -17          46         -37         -25         -34         -27          35   1   15   0
+                 200 0,         123         -17          46         -37         -25         -34         -27          35   1   15   0
+
+// rdy signal and desired outputs both seen at t=170

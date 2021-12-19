@@ -1,0 +1,4 @@
+Inputs given at T = 0.
+time =                    0, reset = 1, out0 =          x,  out1 =          x,  out2 =          x,  out3 =          x,  out4 =          x,  out5 =          x,  out6 =          x,  out7 =          x
+time =                  110, reset = 1, out0 =        140,  out1 =          x,  out2 =          x,  out3 =        127,  out4 =        129,  out5 =          x,  out6 =          x,  out7 =        128
+time =                  170, reset = 1, out0 =        140,  out1 =        125,  out2 =        131,  out3 =        127,  out4 =        129,  out5 =        128,  out6 =        129,  out7 =        128

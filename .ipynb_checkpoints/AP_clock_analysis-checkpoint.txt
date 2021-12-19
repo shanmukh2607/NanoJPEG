@@ -1,0 +1,56 @@
+// Clock cycle analysis for k8x8 image after peripheral interfacing
+
+/opt/riscv32i/bin/riscv32-unknown-elf-gcc -c -march=rv32ic -Os --std=c99 -Werror -Wall -Wextra -Wshadow -Wundef -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wredundant-decls -Wstrict-prototypes -Wmissing-prototypes -pedantic  -ffreestanding -nostdlib -o firmware/hello.o firmware/hello.c
+/opt/riscv32i/bin/riscv32-unknown-elf-gcc -Os -ffreestanding -nostdlib -o firmware/firmware.elf \
+        -Wl,-Bstatic,-T,firmware/sections.lds,-Map,firmware/firmware.map,--strip-debug \
+        firmware/start.o firmware/irq.o firmware/print.o firmware/hello.o firmware/sieve.o firmware/multest.o firmware/stats.o tests/xor.o tests/or.o tests/sh.o tests/sub.o tests/lb.o tests/sra.o tests/blt.o tests/srai.o tests/beq.o tests/addi.o tests/mul.o tests/divu.o tests/lw.o tests/div.o tests/auipc.o tests/sb.o tests/bgeu.o tests/jalr.o tests/sw.o tests/xori.o tests/sll.o tests/mulhu.o tests/slti.o tests/slt.o tests/lbu.o tests/lhu.o tests/lui.o tests/bltu.o tests/remu.o tests/simple.o tests/slli.o tests/andi.o tests/ori.o tests/lh.o tests/srl.o tests/jal.o tests/add.o tests/and.o tests/srli.o tests/j.o tests/bne.o tests/bge.o tests/rem.o tests/mulh.o tests/mulhsu.o -lgcc
+chmod -x firmware/firmware.elf
+/opt/riscv32i/bin/riscv32-unknown-elf-objcopy -O binary firmware/firmware.elf firmware/firmware.bin
+chmod -x firmware/firmware.bin
+python3 firmware/makehex.py firmware/firmware.bin 524288 > firmware/firmware.hex
+vvp -N testbench_mod.vvp
+About to start decoding...
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+Default Operation :230 cycles.
+DQT Operation :2619 cycles.
+DQT Operation :2620 cycles.
+SOF Operation :4660 cycles.
+DHT Operation :1309720 cycles.
+DHT Operation :1608901 cycles.
+DHT Operation :1469633 cycles.
+DHT Operation :1588735 cycles.
+Decoding - macroblock sizes: 1 by 1
+nj Decode Block active cycles :94967 cycles 
+In njDB, IDCT active cycles :22262 cycles 
+Decode Scan Operation :107904 cycles.
+Success!
+Decoded the image in 6224338 cycles.
+Image info computed in 33 cycles.
+Colour image of size 8 x 7
+Writing data to output.dump - 
+rename this to output.ppm or output.pgm to view
+
+All done...
+Cycle counter ........ 6290416
+Instruction counter .. 1422235
+CPI: 4.42
+DONE
+
+------------------------------------------------------------
+EBREAK instruction at 0x0000049C
+pc  0000049F    x8  00000000    x16 00000008    x24 00000000
+x1  0000046C    x9  00000000    x17 300013DE    x25 00000000
+x2  00020000    x10 20000000    x18 00000000    x26 00000000
+x3  DEADBEEF    x11 075BCD15    x19 00000000    x27 00000000
+x4  DEADBEEF    x12 0000004F    x20 00000000    x28 000000FF
+x5  00002336    x13 0000004E    x21 00000000    x29 00000014
+x6  000000FF    x14 00000045    x22 00000000    x30 00000005
+x7  00000000    x15 0000000A    x23 00000000    x31 000000D9
+------------------------------------------------------------
+Number of fast external IRQs counted: 770
+Number of slow external IRQs counted: 96
+Number of timer IRQs counted: 0
+TRAP after 6337270 clock cycles
+ALL TESTS PASSED.

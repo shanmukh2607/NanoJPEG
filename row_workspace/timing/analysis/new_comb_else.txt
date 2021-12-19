@@ -1,0 +1,14 @@
+                 
+COMBINATIONAL TIMING ANALYSIS FROM IN TO OUT WIRE : ELSE- PATH OF ROWIDCT MODULE
+                 TIME 
+INPUTS:          TIME         x0          x1          x2          x3          x4          x5          x6          x7
+
+                   0          1           2           3           4           3           2           1           0
+OUTPUTS:         TIME           y0          y1          y2          y3          y4          y5          y6          y7  flag
+                   0,           x           x           x           x           x           x           x           x   0
+                  90,         123           x           x         -37         -25           x           x          35   0
+                 160,         123         -17          46         -37         -25         -34         -27          35   0
+
+// Observation : Inputs given at T = 0 and desired Outputs are found at T = 160. Reset has no involvement in comb path
+// Verdict: Combinational Delay in ELSE-Path is 160. 
+

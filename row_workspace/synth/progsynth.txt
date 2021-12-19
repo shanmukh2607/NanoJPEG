@@ -1,0 +1,3 @@
+rowidct_synth.v
+tb.v
+/usr/share/yosys/xilinx/cells_sim.v

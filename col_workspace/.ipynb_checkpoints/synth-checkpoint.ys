@@ -1,0 +1,3 @@
+read_verilog col_idct.v
+synth_xilinx -top col_idct
+write_verilog col_idct_synth.v

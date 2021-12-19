@@ -1,0 +1,7 @@
+Inputs given at T = 0.
+time =                    0, reset = 1, out0 =          0,  out1 =          0,  out2 =          0,  out3 =          0,  out4 =          0,  out5 =          0,  out6 =          0,  out7 =          0, ctr =    0, rdy = 0
+time =                   11, reset = 0, out0 =          0,  out1 =          0,  out2 =          0,  out3 =          0,  out4 =          0,  out5 =          0,  out6 =          0,  out7 =          0, ctr =    0, rdy = 0
+time =                   20, reset = 0, out0 =        128,  out1 =        128,  out2 =        128,  out3 =        128,  out4 =        128,  out5 =        128,  out6 =        128,  out7 =        128, ctr =    1, rdy = 0
+time =                   30, reset = 0, out0 =        128,  out1 =        128,  out2 =        128,  out3 =        128,  out4 =        128,  out5 =        128,  out6 =        128,  out7 =        128, ctr =    2, rdy = 0
+time =                   40, reset = 0, out0 =        128,  out1 =        128,  out2 =        128,  out3 =        128,  out4 =        128,  out5 =        128,  out6 =        128,  out7 =        128, ctr =    3, rdy = 0
+time =                   50, reset = 0, out0 =        128,  out1 =        128,  out2 =        128,  out3 =        128,  out4 =        128,  out5 =        128,  out6 =        128,  out7 =        128, ctr =    4, rdy = 1
