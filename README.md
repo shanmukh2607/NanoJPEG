@@ -12,6 +12,7 @@ Acknowledgements:
 - [PicoRV32](https://github.com/YosysHQ/picorv32) - from C. Wolf (YosysHQ).  
 - [NanoJPEG](https://keyj.emphy.de/nanojpeg/)
 
+## Video Demonstration on [YouTube](https://youtu.be/NSaNOSrShvE)
 
 ## Submission Notes
 The execution of code has no dependencies on row workspace and col workspace directories. However, they have important information like synthesis reports and timing information from verilog simulation more about them can be seen in the submission report and readme file.
