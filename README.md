@@ -1,6 +1,6 @@
 
 # EE2003 Course Project 2021: Implementation and Analysis of Peripheral for NanoJPEG Decoder in PicoRV32 environment 
-- By Bachotti Sai Krishna Shanmukh, Katari Hari Chandan and Potta Muni Asheesh
+- By Bachotti Sai Krishna Shanmukh, Katari Hari Chandan and Potta Muni Asheesh <br>
 Roll Numbers : EE19B009, EE19B032 and EE19B048
 
 Professor : Nitin Chandrachoodan
